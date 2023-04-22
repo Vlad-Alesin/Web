@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Спроси градусы</title>
+        <link href="1.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+
+        <script language="JavaScript">
+            function Fareng(a){
+                const bi = a*(9/5)+32;
+                return bi;
+            }
+            
+            function TakeName(a,b){
+                alert('Цельсий:' +a+ ',  Фаренгейт: '+ b.toFixed(1));        
+            }   
+            let a = parseInt(prompt("Введите температуру в градусах Цельсия"));
+            TakeName(a, Fareng(a));
+        </script>
+
+    </body>
+
+</html>
